@@ -1,6 +1,7 @@
 # ai-powered-qa
 A question-answering chatbot powered by the RoBERTa model, capable of providing contextual answers and searching Google for information.
-Welcome to the ROBERTa Question Answering Chatbot with Google Integration!
+
+# ROBERTa Question Answering Chatbot with Google Integration
 
 This project implements a question-answering chatbot using the pre-trained RoBERTa model from Hugging Face's Transformers library. It can answer questions based on a provided context. If the answer is not found in the context, the chatbot attempts to find relevant information by searching Google.
 
@@ -20,10 +21,9 @@ This project implements a question-answering chatbot using the pre-trained RoBER
 
 1.  Clone this repository (if you haven't already):
     ```bash
-    git clone <your_repository_link>
-    cd <your_repository_directory>
+    git clone [https://github.com/Sagarrajjj/ai-powered-qa.git](https://github.com/Sagarrajjj/ai-powered-qa.git)
+    cd ai-powered-qa
     ```
-    *(Remember to replace `<your_repository_link>` and `<your_repository_directory>` with your actual link and directory.)*
 2.  Install the required Python libraries:
     ```bash
     pip install transformers torch googlesearch-python
@@ -48,3 +48,24 @@ This project implements a question-answering chatbot using the pre-trained RoBER
 * **Exit the chatbot:** Type `exit` and press Enter to end the conversation.
 
 ## Example Interaction
+
+You: What is AI?
+Chatbot (from context): the ability of a computer program or a machine to think and learn
+
+You: Who coined the term AI in 1960?
+Chatbot (searching Google...):
+
+Here are some relevant results from Google:
+1. Who Coined the Term Artificial Intelligence? - Merriam-Webster
+2. What Is Artificial Intelligence (AI)? | IBM
+3. History of artificial intelligence - Wikipedia
+
+You can refine your question or try another one.
+
+You: set context: John McCarthy coined the term "artificial intelligence" in 1955 at Dartmouth College.
+Context updated.
+
+You: Who coined the term AI?
+Chatbot (from context): John McCarthyt
+
+You: exi
